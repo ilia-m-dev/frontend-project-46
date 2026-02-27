@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import _ from 'lodash'
-import parse from './parsers.js';
+import parse from './parsers.js'
 
 const readFile = (filepath) => {
   const absolutePath = path.resolve(process.cwd(), filepath)
