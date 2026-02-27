@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import _ from 'lodash'
+import parse from './parsers.js';
 
 const readFile = (filepath) => {
   const absolutePath = path.resolve(process.cwd(), filepath)
@@ -8,15 +9,6 @@ const readFile = (filepath) => {
 }
 
 const getFileExtension = filepath => path.extname(filepath)
-
-const parse = (content, ext) => {
-  switch (ext) {
-    case '.json':
-      return JSON.parse(content)
-    default:
-      throw new Error(`Unknown format: ${ext}`)
-  }
-}
 
 const formatValue = (value) => {
   if (value === null) return 'null'

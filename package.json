@@ -22,6 +22,7 @@
   "homepage": "https://github.com/ilia-m-dev/frontend-project-46#readme",
   "dependencies": {
     "commander": "^14.0.3",
+    "js-yaml": "^4.1.1",
     "lodash": "^4.17.23"
   },
   "devDependencies": {
